@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<header class="header">
+  <h1 id="title" class="centerTitle">Survey Form</h1>
+  <p id="description" class="description centerTitle"> Let us know more about your reading preferences! </p>
+</header>
+
+<!-- Start of the forms -->
+<form id="survey-form">
+  <!-- Name field -->
+  <div class="info">
+    <label id="name-label" for="name">Name</label>
+    <input 
+           type="text"
+           name="name" 
+           id="name" 
+           class="form-control" 
+           placeholder="Please enter your name"
+           required/>
+    </div>
+  <!-- Email field -->
+  <div class="info">
+    <label id="email-label" for="email">Email</label>
+    <input 
+           type="email" 
+           name="email" 
+           id="email" 
+           class="form-control" 
+           placeholder="Please enter your Email"
+           required/>
+    </div>
+   <!-- Age field -->
+  <div class="info">
+    <label id="number-label" for="age">Age</label>
+    <input 
+           type="number" 
+           name="age" 
+           id="age"
+           min="13"
+           max="113"
+           class="form-control" 
+           placeholder="Age"
+           required/>
+    </div>
+     <!-- Dropdown field -->
+  <div class="info">
+    <p class="pName">What is your favorite weather to read in?</p>
+    <select name="favWeather" id="dropdown">
+      <option value="snow">Snow</option>
+      <option value="rain">Rain</option>
+      <option value="sunny">Sunny Day</option>
+      <option value="fall">Fall Day</option>
+    </select>
+    </div>
+  
+   <!-- =======Radio field======= -->
+<!-- Yes field -->    
+  <div class="info">
+    <p>How often do you read?</p>
+    <label for="often">
+    <input 
+           type="radio" 
+           id="often" 
+           name="read" 
+           value="often"
+           class="input-radio"
+           checked>
+  All the time</label>   
+<!-- Maybe field -->  
+    <label for="sometimes">
+    <input 
+           type="radio" 
+           id="sometimes" 
+           name="read" 
+           value="sometimes"
+           class="input-radio">
+  Sometimes</label>  
+<!-- No field -->  
+    <label for="never">
+    <input 
+           type="radio" 
+           id="never" 
+           name="read" 
+           value="never"
+           class="input-radio">
+  Never</label>
+    </div> 
+      
+     <!-- =======Checkboxes field======= --> 
+   <div class="info">
+     <p>What are your favorite genres to read?<span class="hint">(Select all that apply)</span></p>
+    <label for ="fantasy">
+     <input 
+           type="checkbox" 
+           id="fantasy" 
+           name="genre" 
+           value="fantasy"
+           class="input-checkbox">
+  Fantasy</label>   
+<!-- Non Fiction field -->    
+    <label for="nfiction">
+     <input 
+           type="checkbox" 
+           id="nfiction" 
+           name="genre" 
+           value="nfiction"
+           class="input-checkbox">
+  Non-Fiction</label>  
+<!-- scifi field -->    
+    <label for="scifi">
+     <input 
+           type="checkbox" 
+           id="scifi" 
+           name="genre" 
+           value="scifi"
+           class="input-checkbox">
+  Science Fiction</label> 
+<!-- Romance field -->    
+   <label for="romance">
+     <input 
+           type="checkbox" 
+           id="romance" 
+           name="genre" 
+           value="romance"
+           class="input-checkbox">
+  Romance</label>
+    </div>      
+
+  <!-- =======Textarea field======= --> 
+  <div class="info">
+     <p>Additional Comments</p>
+  <textarea 
+      id="comments"
+      class="input-textarea"
+      name="comment"
+      placeholder="Please add additional comments..."></textarea>
+  </div>
+  
+  <!-- ========Submit Button======== -->
+  <div class="info">
+     <button 
+             type="submit"
+             id="submit"
+             class="submit-button">Submit
+    </button>
+  </div>
+</form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
